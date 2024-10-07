@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/512/Ghost-Flat-icon.png"
+      type="image/png"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
@@ -16,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <title>Brunoween</title>
+    <title>Brulloween</title>
   </head>
   <body>
     <header>
@@ -46,5 +51,18 @@
         <button id="comprar-ingresso">ADQUIRIR INGRESSO</button>
       </div>
     </main>
+    <script>
+      document
+        .getElementById("comprar-ingresso")
+        .addEventListener("click", function () {
+          const phoneNumber = "5399859952";
+          const message = "Quero comprar um ingresso para o Brulloween 3.0";
+          const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+            message
+          )}`;
+
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
   </body>
 </html>
