@@ -1,0 +1,129 @@
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-family: "DM Sans";
+  font-weight: bolder;
+  background-color: black;
+  height: 15vh;
+  align-items: center;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  color: #f5583f;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  color: inherit;
+}
+
+main {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
+  color: #9d1600;
+  align-items: center;
+  width: 100vw;
+}
+
+.container-main {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  align-items: center;
+  overflow: hidden;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  width: 60%;
+  font-weight: 100;
+  font-size: 4.2em;
+  letter-spacing: -2px;
+  color: #d34630;
+  text-shadow: 0 0 2px rgba(255, 22, 0, 0.7), 0 0 5px rgba(255, 22, 0, 0.5),
+    0 0 10px rgba(255, 22, 0, 0.4), 0 0 15px #9d1600;
+  margin-right: -8.5em;
+}
+
+#cidade {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.9em;
+  margin-bottom: -35px;
+}
+
+#nome-evento {
+  font-size: 1.2em;
+}
+
+.picture {
+  margin-right: -10em;
+}
+
+.picture img {
+  width: 70vw;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.ingresso {
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+}
+
+#comprar-ingresso {
+  padding: 10px 30px;
+  font-size: 1.2em;
+  color: #9d1600;
+  background-color: transparent;
+  border: 2px solid #9d1600;
+  border-radius: 30px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 80vw;
+  font-family: "DM Sans", Courier, monospace;
+  font-weight: 900;
+}
+
+#comprar-ingresso::before,
+#comprar-ingresso::after {
+  content: "✦";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: #9d1600;
+}
+
+#comprar-ingresso::before {
+  left: 10px;
+}
+
+#comprar-ingresso::after {
+  right: 10px;
+}
+
+#comprar-ingresso:hover {
+  background-color: #f5583f;
+  color: white;
+}
+
+#comprar-ingresso:hover::before,
+#comprar-ingresso:hover::after {
+  color: #ffffff;
+}
