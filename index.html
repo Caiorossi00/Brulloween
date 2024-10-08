@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="pt-br">
+  <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
@@ -15,43 +14,46 @@
       href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <title>Brulloween</title>
   </head>
   <body>
     <header>
-      <li>NOSSO INSTAGRAM</li>
+      <li data-aos="fade-up" data-aos-duration="800">NOSSO INSTAGRAM</li>
       <li>.</li>
-      <li>ORGANIZADORES</li>
+      <li data-aos="fade-up" data-aos-duration="800">ORGANIZADORES</li>
       <li>.</li>
-      <li>
-        <a href="instagram.com/caiorossi.dev">DEVELOPED BY @CAIOROSSI.DEV</a>
+      <li data-aos="fade-up" data-aos-duration="800">
+          <a href="https://instagram.com/caiorossi.dev">DEVELOPED BY @CAIOROSSI.DEV</a>
       </li>
-    </header>
-    <main>
+  </header>
+  <main>
       <div class="container-main">
-        <div class="text">
-          <h1 id="cidade">Jaguarão</h1>
-          <h1 id="nome-evento">BRULLOWEEN <br />3.0</h1>
-        </div>
-        <div class="picture">
-          <img
-            src="https://cdn.discordapp.com/attachments/1242856448241701018/1292987571739168880/image.png?ex=6705bc03&is=67046a83&hm=65448fb9d4901e46a3a76f533d641a7390402b8116e563373d5367e80340a296&"
-            alt=""
-            srcset=""
-          />
-        </div>
+          <div class="text" data-aos="fade-up" data-aos-duration="800">
+              <h1 id="cidade">Jaguarão</h1>
+              <h1 id="nome-evento">BRULLOWEEN <br />3.0</h1>
+          </div>
+          <div class="picture" data-aos="fade-left" data-aos-duration="800">
+              <img
+                src="https://cdn.discordapp.com/attachments/1242856448241701018/1292987571739168880/image.png?ex=6705bc03&is=67046a83&hm=65448fb9d4901e46a3a76f533d641a7390402b8116e563373d5367e80340a296&"
+                alt=""
+                srcset=""
+              />
+          </div>
       </div>
-      <div class="ingresso">
+      <div class="ingresso" data-aos="fade-down" data-aos-duration="800">
         <button id="comprar-ingresso">ADQUIRIR INGRESSO</button>
       </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
+      AOS.init();
+
       document
         .getElementById("comprar-ingresso")
         .addEventListener("click", function () {
