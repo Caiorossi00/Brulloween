@@ -29,7 +29,7 @@ h1 {
 .colaborador {
   background-color: #000;
   text-align: center;
-  height: 220px;
+  height: fit-content;
   width: 180px;
   display: flex;
   flex-direction: column;
@@ -38,14 +38,12 @@ h1 {
 }
 
 .colaborador img {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border: 3px solid #E82809;
   margin-bottom: 10px;
 }
-
-
 
 .contatos {
   display: flex;
