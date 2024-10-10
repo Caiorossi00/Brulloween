@@ -2,38 +2,38 @@ const colaboradores = [
   {
     foto: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     nome: "Bruno Gonçalves",
-    instagram: "https://instagram.com/bruno",
-    whatsapp: "https://wa.me/123456789"
+    instagram: "https://instagram.com/gbrunoramos",
+    whatsapp: "https://wa.me/53991056073"
   },
   {
     foto: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     nome: "Elisa Florência",
-    instagram: "https://instagram.com/elisa",
-    whatsapp: "https://wa.me/987654321",
+    instagram: "https://instagram.com/elisaf.m",
+    whatsapp: "https://wa.me/53984790472",
   },
   {
     foto: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    nome: "Martina Velasques",
-    instagram: "https://instagram.com/martina",
-    whatsapp: "https://wa.me/987654321"
+    nome: "Marttina Velasques",
+    instagram: "https://instagram.com/marttinavelas.q",
+    whatsapp: "https://wa.me/54984440067"
   },
   {
     foto: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     nome: "Patrick Martins",
-    instagram: "https://instagram.com/patrick",
-    whatsapp: "https://wa.me/1122334455"
+    instagram: "https://instagram.com/patrickb.martins",
+    whatsapp: "https://wa.me/5399711254"
   },
   {
     foto: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     nome: "Sarah Lima",
-    instagram: "https://instagram.com/sarah",
-    whatsapp: "https://wa.me/5566778899"
+    instagram: "https://instagram.com/sarah_limadacunha",
+    whatsapp: "https://wa.me/53984694733"
   },
   {
     foto: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     nome: "Theodoro Gallo",
-    instagram: "https://instagram.com/theodoro",
-    whatsapp: "https://wa.me/9988776655"
+    instagram: "https://instagram.com/theoggallo",
+    whatsapp: "https://wa.me/53984735604"
   },
   {
     foto: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -65,5 +65,3 @@ function displayColaboradores() {
 }
 
 displayColaboradores();
-
-
