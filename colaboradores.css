@@ -11,9 +11,11 @@ body {
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
-  margin-top: 10px;
+  margin: 0;
+  font-family: "Times New Roman";
+  text-transform: uppercase;
 }
 
 .colaboradores {
@@ -43,10 +45,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-h1 {
-  font-size: 1.2rem;
-  margin: 0;
-}
+
 
 .contatos {
   display: flex;
