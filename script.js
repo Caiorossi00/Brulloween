@@ -1,36 +1,36 @@
 const colaboradores = [
   {
-    foto: "../../assets/colaboradores/bruno.jpg",
+    foto: "../assets/colaboradores/bruno.jpg",
     nome: "Bruno Gonçalves",
     instagram: "https://instagram.com/gbrunoramos",
     whatsapp: "https://wa.me/53991056073",
   },
   {
-    foto: "../../assets/colaboradores/elisa.jpg",
+    foto: "../assets/colaboradores/elisa.jpg",
     nome: "Elisa Florência",
     instagram: "https://instagram.com/elisaf.m",
     whatsapp: "https://wa.me/53984790472",
   },
   {
-    foto: "../../assets/colaboradores/marttina.jpg",
+    foto: "../assets/colaboradores/marttina.jpg",
     nome: "Marttina Velasques",
     instagram: "https://instagram.com/marttinavelas.q",
     whatsapp: "https://wa.me/54984440067",
   },
   {
-    foto: "../../assets/colaboradores/patrick.jpg",
+    foto: "../assets/colaboradores/patrick.jpg",
     nome: "Patrick Martins",
     instagram: "https://instagram.com/patrickb.martins",
     whatsapp: "https://wa.me/5399711254",
   },
   {
-    foto: "../../assets/colaboradores/sarah.jpg",
+    foto: "../assets/colaboradores/sarah.jpg",
     nome: "Sarah Lima",
     instagram: "https://instagram.com/sarah_limadacunha",
     whatsapp: "https://wa.me/53984694733",
   },
   {
-    foto: "../../assets/colaboradores/theo.jpg",
+    foto: "../assets/colaboradores/theo.jpg",
     nome: "Theodoro Gallo",
     instagram: "https://instagram.com/theoggallo",
     whatsapp: "https://wa.me/53984735604",
