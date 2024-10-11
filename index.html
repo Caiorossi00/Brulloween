@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="icon"
-    href="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/512/Ghost-Flat-icon.png"
-    type="image/png"
-  />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
-  <title>Brulloween</title>
-</head>
-<body>
-  <header>
-    <li data-aos="fade-up" data-aos-duration="800">NOSSO INSTAGRAM</li>
-    <li>.</li>
-    <li data-aos="fade-up" data-aos-duration="800">
-      <a href="organizadores.html">ORGANIZADORES</a>
-    </li>
-    <li>.</li>
-    <li data-aos="fade-up" data-aos-duration="800">
-      <a href="https://instagram.com/caiorossi.dev">DEVELOPED BY @CAIOROSSI.DEV</a>
-    </li>
-  </header>
-  <main>
-    <div class="container-main">
-      <div class="text" data-aos="fade-up" data-aos-duration="800">
-        <h1 id="cidade">Jaguarão</h1>
-        <h1 id="nome-evento">BRULLOWEEN <br />3.0</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/512/Ghost-Flat-icon.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
+    <title>Brulloween</title>
+  </head>
+  <body>
+    <header>
+      <li data-aos="fade-up" data-aos-duration="800">NOSSO INSTAGRAM</li>
+      <li>.</li>
+      <li data-aos="fade-up" data-aos-duration="800">
+        <a href="organizadores.html">ORGANIZADORES</a>
+      </li>
+      <li>.</li>
+      <li data-aos="fade-up" data-aos-duration="800">
+        <a href="https://instagram.com/caiorossi.dev"
+          >DEVELOPED BY @CAIOROSSI.DEV</a
+        >
+      </li>
+    </header>
+    <main>
+      <div class="container-main">
+        <div class="text" data-aos="fade-up" data-aos-duration="800">
+          <h1 id="cidade">Jaguarão</h1>
+          <h1 id="nome-evento">BRULLOWEEN <br />3.0</h1>
+        </div>
+        <div class="picture" data-aos="fade-left" data-aos-duration="800">
+          <img src="./assets/bg.gif" alt="" srcset="" />
+        </div>
       </div>
-      <div class="picture" data-aos="fade-left" data-aos-duration="800">
-        <img
-          src="./assets/bg.gif"
-          alt=""
-          srcset=""
-        />
+      <div class="ingresso">
+        <button id="comprar-ingresso">ADQUIRIR INGRESSO</button>
       </div>
-    </div>
-    <div class="ingresso">
-      <button id="comprar-ingresso">ADQUIRIR INGRESSO</button>
-    </div>
-  </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-  <script>
-    AOS.init();
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+      AOS.init();
 
-    document
-      .getElementById("comprar-ingresso")
-      .addEventListener("click", function () {
-        const phoneNumber = "5399859952";
-        const message = "Quero comprar um ingresso para o Brulloween 3.0";
-        const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
-          message
-        )}`;
+      document
+        .getElementById("comprar-ingresso")
+        .addEventListener("click", function () {
+          const phoneNumber = "5399859952";
+          const message = "Quero comprar um ingresso para o Brulloween 3.0";
+          const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+            message
+          )}`;
 
-        window.open(whatsappURL, "_blank");
-      });
-  </script>
-</body>
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
+  </body>
 </html>

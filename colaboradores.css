@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Times New Roman MT Condensed";
+  src: url("assets/fonts/Times\ New\ Roman\ MT\ Condensed\ Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +14,39 @@
 
 body {
   background-color: #000;
-  color: #E82809;
-  font-family: Arial, sans-serif;
+  color: #e82809;
+
+  header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bolder;
+    background-color: black;
+    height: 15vh;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  li {
+    list-style-type: none;
+    color: #f5583f;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  header a {
+    color: inherit;
+  }
 }
 
-h1 {
-  font-size: 0.8rem;
+.h1-colaborador {
+  font-size: 1rem;
   text-align: center;
   margin: 0;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman MT Condensed";
   text-transform: uppercase;
 }
 
@@ -24,7 +56,8 @@ h1 {
   justify-content: center;
   gap: 20px;
   margin: 0 15%;
-  margin-top: 3vh;
+  margin-top: 4vh;
+  min-height: 60vh;
 }
 
 .colaborador {
@@ -39,10 +72,10 @@ h1 {
 }
 
 .colaborador img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border: 3px solid #E82809;
+  border: 3px solid #e82809;
   margin-bottom: 10px;
 }
 
@@ -62,19 +95,14 @@ h1 {
   filter: invert(1);
 }
 
-.header-colaboradores {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .contato {
-display: flex;
-justify-content: center;
-  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #entre-em-contato {
-  background-color: red
+  background-color: red;
 }
 
 #entre-em-contato {
@@ -90,7 +118,8 @@ justify-content: center;
   cursor: pointer;
   width: 80vw;
   font-family: "DM Sans", Courier, monospace;
-  font-weight: 900;
+  margin-bottom: 5vh;
+  font-weight: bolder;
 }
 
 #entre-em-contato::before,
@@ -99,6 +128,7 @@ justify-content: center;
   transform: translateY(-50%);
   font-size: 1em;
   color: #9d1600;
+  margin: 0 10%;
 }
 
 #entre-em-contato::before {
@@ -110,11 +140,11 @@ justify-content: center;
 }
 
 #entre-em-contato:hover {
-  background-color: #ffffff;
-  color: black;
+  background-color: #2a2a2a;
+  color: rgb(255, 255, 255);
 }
 
 #entre-em-contato:hover::before,
 #entre-em-contato:hover::after {
-  color: #000000;
+  color: #ffffff;
 }
