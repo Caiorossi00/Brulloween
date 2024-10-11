@@ -1,6 +1,6 @@
 const colaboradores = [
   {
-    foto: "../assets/colaboradores/bruno.jpg",
+    foto: "./assets/colaboradores/bruno.jpg",
     nome: "Bruno Gonçalves",
     instagram: "https://instagram.com/gbrunoramos",
     whatsapp: "https://wa.me/53991056073",
@@ -12,7 +12,7 @@ const colaboradores = [
     whatsapp: "https://wa.me/53984790472",
   },
   {
-    foto: "../assets/colaboradores/marttina.jpg",
+    foto: "/assets/colaboradores/marttina.jpg",
     nome: "Marttina Velasques",
     instagram: "https://instagram.com/marttinavelas.q",
     whatsapp: "https://wa.me/54984440067",
