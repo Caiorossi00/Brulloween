@@ -51,10 +51,10 @@ ul li a {
   gap: 20px;
   margin: 0 15%;
   min-height: 60vh;
-  font-family: "times new roman condensed";
-  letter-spacing: -1px;
+  font-family: "Times New Roman MT Condensed";
   font-size: 1.2em;
   margin-bottom: 5vh;
+  margin-top: 2vh;
 }
 
 .colaborador {
