@@ -6,6 +6,12 @@
   font-style: normal;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -31,162 +37,146 @@ header a {
   color: inherit;
 }
 
-main {
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  font-family: "Times New Roman MT Condensed", Times, serif;
-  color: #9d1600;
-  align-items: center;
-  width: 100vw;
-}
-
 .container-main {
   display: flex;
   justify-content: space-around;
-  width: 100vw;
   align-items: center;
-  overflow: hidden;
+  height: 85vh;
+  margin-top: 10vh;
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
-  z-index: 999;
-  width: 60%;
-  font-weight: 100;
-  font-size: 4.2em;
-  letter-spacing: -2px;
   color: #d34630;
-  text-shadow: 0 0 2px rgba(255, 22, 0, 0.7), 0 0 5px rgba(255, 22, 0, 0.5),
-    0 0 10px rgba(255, 22, 0, 0.4), 0 0 15px #9d1600;
-  margin-right: -8.5em;
-  margin-top: -1em;
+  font-family: "Times New Roman MT Condensed", serif;
+  text-shadow: 0 0 5px rgba(255, 22, 0, 0.7), 0 0 10px rgba(255, 22, 0, 0.5),
+    0 0 15px rgba(255, 22, 0, 0.4), 0 0 20px #9d1600;
+  text-align: center;
+}
+
+.picture img {
+  max-width: 100%;
+  height: auto;
 }
 
 #cidade {
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
-  font-style: normal;
-  font-size: 1.9em;
-  margin-bottom: -25px;
+  font-size: 3em;
 }
 
 #nome-evento {
-  font-size: 1.2em;
-}
-
-.picture {
-  margin-right: -10em;
-}
-
-.picture img {
-  width: 70vw;
-  height: 80vh;
-  object-fit: cover;
+  font-size: 2.5em;
 }
 
 .ingresso {
   display: flex;
   justify-content: center;
-  margin-top: -40px;
+  margin-top: 20px;
 }
 
 #comprar-ingresso {
-  padding: 3px 10px;
-  font-size: 1em;
-  color: #9d1600;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  color: #d34630;
   background-color: transparent;
-  border: 2px solid #9d1600;
+  border: 2px solid #d34630;
   border-radius: 30px;
-  position: relative;
-  text-align: center;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  width: 80vw;
-  font-family: "DM Sans", Courier, monospace;
-  font-weight: 900;
-}
-
-#comprar-ingresso::before,
-#comprar-ingresso::after {
-  content: "✦";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.2em;
-  color: #9d1600;
-}
-
-#comprar-ingresso::before {
-  left: 10px;
-}
-
-#comprar-ingresso::after {
-  right: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
 
 #comprar-ingresso:hover {
-  background-color: #f5583f;
   color: white;
 }
 
-#comprar-ingresso:hover::before,
-#comprar-ingresso:hover::after {
-  color: #ffffff;
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2em;
+  color: #f5583f;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #9d1600;
+  text-align: center;
+  z-index: 3;
+  padding: 20px 0;
+  font-family: "DM Sans";
+}
+
+#mobile-menu li {
+  padding: 15px 0;
+  color: white;
+}
+
+#mobile-menu a {
+  color: white;
+}
+
+#mobile-menu .close-btn {
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.menu-open #mobile-menu {
+  display: block;
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-
-  li {
-    margin: 5px 0;
-    text-align: center;
-  }
-
   .container-main {
+    position: relative;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
   }
 
   .text {
-    width: 100%;
-    font-size: 2.5em;
-    margin-right: 0;
-    margin-top: 1em;
-  }
-
-  #cidade {
-    font-size: 1.5em;
-  }
-
-  #nome-evento {
-    font-size: 1em;
+    z-index: 2;
+    color: #e82809;
+    font-family: "Times New Roman MT Condensed", serif;
+    text-shadow: 0 0 5px rgba(255, 22, 0, 0.7), 0 0 10px rgba(255, 22, 0, 0.5),
+      0 0 15px rgba(255, 22, 0, 0.4), 0 0 20px #9d1600;
+    margin-top: 40vh;
   }
 
   .picture {
-    margin-right: 0;
-    width: 100%;
+    position: absolute;
   }
 
   .picture img {
-    width: 100vw;
-    height: auto;
+    height: 60vh;
     object-fit: cover;
+    filter: grayscale(70%);
+    margin-top: -10vh;
   }
 
-  .ingresso {
-    margin-top: 20px;
+  #cidade {
+    font-size: 4em;
+  }
+
+  #nome-evento {
+    font-size: 3.4em;
   }
 
   #comprar-ingresso {
-    width: 90%;
-    font-size: 0.9em;
-    padding: 5px 15px;
+    color: #e82809;
+    font-size: 1em;
   }
 }

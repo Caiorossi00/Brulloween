@@ -26,20 +26,20 @@
     />
     <title>Brulloween</title>
   </head>
+
   <body>
-    <header>
-      <li data-aos="fade-up" data-aos-duration="800">NOSSO INSTAGRAM</li>
-      <li>.</li>
-      <li data-aos="fade-up" data-aos-duration="800">
-        <a href="organizadores.html">ORGANIZADORES</a>
-      </li>
-      <li>.</li>
-      <li data-aos="fade-up" data-aos-duration="800">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="mobile-menu">
+      <span class="close-btn" onclick="toggleMenu()">×</span>
+      <li><a href="#">NOSSO INSTAGRAM</a></li>
+      <li><a href="organizadores.html">ORGANIZADORES</a></li>
+      <li>
         <a href="https://instagram.com/caiorossi.dev"
           >DEVELOPED BY @CAIOROSSI.DEV</a
         >
       </li>
-    </header>
+    </nav>
+
     <main>
       <div class="container-main">
         <div class="text" data-aos="fade-up" data-aos-duration="800">
@@ -47,13 +47,14 @@
           <h1 id="nome-evento">BRULLOWEEN <br />3.0</h1>
         </div>
         <div class="picture" data-aos="fade-left" data-aos-duration="800">
-          <img src="./assets/bg.gif" alt="" srcset="" />
+          <img src="./assets/bg.gif" alt="Imagem Halloween" />
         </div>
       </div>
       <div class="ingresso">
         <button id="comprar-ingresso">ADQUIRIR INGRESSO</button>
       </div>
     </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
       AOS.init();
@@ -69,6 +70,10 @@
 
           window.open(whatsappURL, "_blank");
         });
+
+      function toggleMenu() {
+        document.body.classList.toggle("menu-open");
+      }
     </script>
   </body>
 </html>
