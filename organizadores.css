@@ -98,6 +98,13 @@ ul li a {
   margin-top: 20px;
 }
 
+button > a {
+  color: #9d1600;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 #entre-em-contato {
   padding: 3px 10px;
   font-size: 1em;

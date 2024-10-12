@@ -25,13 +25,15 @@
       </div>
       <ul class="desktop-menu">
         <li data-aos="fade-up" data-aos-duration="800">
-          <a href="https://www.instagram.com/brulloween/">NOSSO INSTAGRAM</a>
+          <a href="https://instagram.com/caiorossi.dev" target="_blank"
+            >NOSSO INSTAGRAM</a
+          >
         </li>
         <li data-aos="fade-up" data-aos-duration="800">
-          <a href="index.html">COMPRAR INGRESSO</a>
+          <a href="index.html" target="_blank">COMPRAR INGRESSO</a>
         </li>
         <li data-aos="fade-up" data-aos-duration="800">
-          <a href="https://instagram.com/caiorossi.dev"
+          <a href="https://instagram.com/caiorossi.dev" target="_blank"
             >DEVELOPED BY @CAIOROSSI.DEV</a
           >
         </li>
@@ -40,10 +42,14 @@
       <div id="mobile-menu" class="mobile-menu">
         <span class="close-btn" onclick="toggleMenu()">&times;</span>
         <ul>
-          <li><a href="#">NOSSO INSTAGRAM</a></li>
+          <li>
+            <a href="https://instagram.com/caiorossi.dev" target="_blank"
+              >NOSSO INSTAGRAM</a
+            >
+          </li>
           <li><a href="index.html">COMPRAR INGRESSO</a></li>
           <li>
-            <a href="https://instagram.com/caiorossi.dev"
+            <a href="https://instagram.com/caiorossi.dev" target="_blank"
               >DEVELOPED BY @CAIOROSSI.DEV</a
             >
           </li>
@@ -53,15 +59,11 @@
 
     <div class="colaboradores"></div>
     <div class="contato">
-      <button id="entre-em-contato">ADQUIRIR INGRESSO</button>
+      <button id="entre-em-contato">
+        <a href="index.html">ADQUIRIR INGRESSO</a>
+      </button>
     </div>
 
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("mobile-menu");
-        menu.classList.toggle("menu-open");
-      }
-    </script>
     <script src="script.js"></script>
   </body>
 </html>

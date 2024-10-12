@@ -184,6 +184,7 @@ header a {
     object-fit: cover;
     filter: grayscale(70%);
     margin-top: -10vh;
+    overflow-x: hidden;
   }
 
   #cidade {

@@ -72,3 +72,26 @@ function displayColaboradores() {
 }
 
 displayColaboradores();
+
+AOS.init();
+
+document
+  .getElementById("comprar-ingresso")
+  .addEventListener("click", function () {
+    const phoneNumber = "5391056073";
+    const message = "Quero comprar um ingresso para o Brulloween 3.0";
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+  });
+
+function toggleMenu() {
+  document.body.classList.toggle("menu-open");
+}
+
+function toggleMenu() {
+  const menu = document.getElementById("mobile-menu");
+  menu.classList.toggle("menu-open");
+}
