@@ -75,20 +75,40 @@ header a {
 }
 
 #comprar-ingresso {
-  padding: 10px 30px;
-  font-size: 1.2em;
-  color: #d34630;
+  padding: 3px 10px;
+  font-size: 1em;
+  color: #9d1600;
   background-color: transparent;
-  border: 2px solid #d34630;
+  border: 2px solid #9d1600;
   border-radius: 30px;
+  position: relative;
+  text-align: center;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
+  width: 80vw;
+  font-family: "DM Sans", Courier, monospace;
+  margin-bottom: 5vh;
 }
 
 #comprar-ingresso:hover {
   color: white;
+}
+
+#comprar-ingresso::before,
+#comprar-ingresso::after {
+  content: "✦";
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #9d1600;
+  margin: 0 4%;
+}
+
+#comprar-ingresso::before {
+  left: 10px;
+}
+
+#comprar-ingresso::after {
+  right: 10px;
 }
 
 .menu-icon {
@@ -107,11 +127,10 @@ header a {
   top: 60px;
   left: 0;
   width: 100%;
-  background-color: #9d1600;
+  background-color: #e82809;
   text-align: center;
   z-index: 3;
   padding: 20px 0;
-  font-family: "DM Sans";
 }
 
 #mobile-menu li {

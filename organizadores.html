@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,8 +11,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="colaboradores.css" />
-
+    <link rel="stylesheet" href="organizadores.css" />
     <script
       src="https://kit.fontawesome.com/d3fb1e03fb.js"
       crossorigin="anonymous"
@@ -21,22 +20,48 @@
   </head>
   <body>
     <header>
-      <li data-aos="fade-up" data-aos-duration="800">NOSSO INSTAGRAM</li>
-      <li>.</li>
-      <li data-aos="fade-up" data-aos-duration="800">
-        <a href="index.html">COMPRAR INGRESSO</a>
-      </li>
-      <li>.</li>
-      <li data-aos="fade-up" data-aos-duration="800">
-        <a href="https://instagram.com/caiorossi.dev"
-          >DEVELOPED BY @CAIOROSSI.DEV</a
-        >
-      </li>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="desktop-menu">
+        <li data-aos="fade-up" data-aos-duration="800">
+          <a href="https://www.instagram.com/brulloween/">NOSSO INSTAGRAM</a>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="800">
+          <a href="index.html">COMPRAR INGRESSO</a>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="800">
+          <a href="https://instagram.com/caiorossi.dev"
+            >DEVELOPED BY @CAIOROSSI.DEV</a
+          >
+        </li>
+      </ul>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <ul>
+          <li><a href="#">NOSSO INSTAGRAM</a></li>
+          <li><a href="index.html">COMPRAR INGRESSO</a></li>
+          <li>
+            <a href="https://instagram.com/caiorossi.dev"
+              >DEVELOPED BY @CAIOROSSI.DEV</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
+
     <div class="colaboradores"></div>
     <div class="contato">
       <button id="entre-em-contato">ADQUIRIR INGRESSO</button>
     </div>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("menu-open");
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
